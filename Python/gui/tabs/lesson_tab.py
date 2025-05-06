@@ -1,4 +1,3 @@
-import tkinter as tk
 from tkinter import ttk
 from utils.tkinter_utils import *
 from controllers.lesson_controller import LessonController
