@@ -1,3 +1,4 @@
+drop database vet_clinic;
 create database if not exists vet_clinic;
 use vet_clinic;
 

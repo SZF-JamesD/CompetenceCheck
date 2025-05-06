@@ -59,11 +59,7 @@ class DatabaseHandler:
           
 
             var = ",".join(str(x) for x in data["wrong_answers"])
-            main_params = f"{data["id"]}, '{data["english"]}', '{data["german"]}', '{var}', {data["tries"]}"
-            
-
-            
-          
+            main_params = f"{data["id"]}, '{data["english"]}', '{data["german"]}', '{var}', {data["tries"]}"                                  
             main_query = f"insert into {table} (id, english, german, wrong_answers, tries) values ({main_params})"                                
             self.execute_query(main_query)
 
