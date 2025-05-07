@@ -1,0 +1,6 @@
+The database is structured with 6 columns, id, title, description, status, date_created, and priority.
+these are int, text, text, varchar, date, and int.
+
+The operation is done via the DBHelpers, which handle selecting, inserting, deleting, as well as closing the connection.
+
+The connection itself is made in the DBConnection class, by reading the config.properties file in the resources repository.
