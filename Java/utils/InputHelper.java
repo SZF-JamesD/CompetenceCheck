@@ -2,7 +2,6 @@ package utils;
 
 import java.util.Scanner;
 import java.util.function.IntPredicate;
-import java.util.function.DoublePredicate;
 import java.util.function.Predicate;
 
 public class InputHelper {
