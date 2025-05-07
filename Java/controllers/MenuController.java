@@ -3,6 +3,8 @@ package controllers;
 import models.WorkOrder;
 import services.InputHandler;
 import services.MenuService;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class MenuController {
@@ -25,7 +27,12 @@ public class MenuController {
     }
 
     public void getAllOrders() {
-        for (WorkOrder workOrder : menuService.getAllOrders()) {
+        List<WorkOrder> list = menuService.getAllOrders();
+        if (list.isEmpty()) {
+            System.out.println("No work orders stored");
+            return;
+        }
+        for (WorkOrder workOrder : list) {
             System.out.println(workOrder.toString());
         }
     }
@@ -33,10 +40,20 @@ public class MenuController {
     public void getOrder() {
         boolean running = true;
         while (running) {
-            System.out.print("Enter the ID of the work order you wish to view: ");
+            System.out.print("Enter the ID of the work order you wish to view or -1 to exit: ");
             try {
+
                 int input = Integer.parseInt(sc.nextLine());
-                System.out.println(menuService.getWorkOrder(input));
+                if (input == -1){
+                    running = false;
+                    return;
+                }
+                WorkOrder order = menuService.getWorkOrder(input);
+                if (order == null){
+                    System.out.println("No work order with that id found");
+                    continue;
+                }
+                System.out.println(order);
                 running = false;
             } catch (NumberFormatException e) {
                 System.out.println("Please enter an integer.");
@@ -47,9 +64,13 @@ public class MenuController {
     public void changeStatus() {
         boolean running = true;
         while (running) {
-            System.out.print("Enter the ID of the work order you wish to edit: ");
+            System.out.print("Enter the ID of the work order you wish to edit or -1 to exit: ");
             try {
                 int id = Integer.parseInt(sc.nextLine());
+                if (id == -1){
+                    running = false;
+                    return;
+                }
                 String status = inputHandler.checkStatus();
                 menuService.changeStatus(id, status);
                 System.out.println("Status changed successfully.");
@@ -63,7 +84,12 @@ public class MenuController {
 
     public void filterByStatus() {
         String status = inputHandler.checkStatus();
-        for (WorkOrder workOrder : menuService.getFiltered(status)) {
+        List<WorkOrder> list = menuService.getFiltered(status);
+        if (list.isEmpty()){
+            System.out.println("No orders with that status");
+            return;
+        }
+        for (WorkOrder workOrder : list) {
             System.out.println(workOrder.toString());
         }
     }

@@ -19,20 +19,20 @@ public class MenuService {
     public WorkOrder getWorkOrder(int id) {
         try {
             String sql = "select * from work_orders where id=?";
-            dbHelpers.executeSingleResultQuery("work_orders_db", sql, stmt ->
+            return dbHelpers.executeSingleResultQuery("work_orders_db", sql, stmt ->
                         stmt.setInt(1, id),
-                    rs -> {
-                        WorkOrder workOrder = new WorkOrder(
+                    rs ->
+                         new WorkOrder(
                                 rs.getInt("id"),
                                 rs.getString("title"),
                                 rs.getString("description"),
                                 rs.getString("status"),
                                 rs.getDate("date_created"),
                                 rs.getInt("priority")
-                        );
-                        return workOrder.toString();
+                        )
 
-                    }
+
+
             );
         } catch (SQLException e) {
             System.out.println("Error: " + e);
