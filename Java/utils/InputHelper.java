@@ -6,9 +6,13 @@ import java.util.function.DoublePredicate;
 import java.util.function.Predicate;
 
 public class InputHelper {
-    private static final Scanner sc = new Scanner(System.in);
+    private final Scanner sc;
 
-    public static String getValidString(String prompt, Predicate<String> validator, String errorMessage) {
+    public InputHelper(Scanner sc) {
+        this.sc = sc;
+    }
+
+    public String getValidString(String prompt, Predicate<String> validator, String errorMessage) {
         while (true) {
             System.out.print(prompt);
             String input = sc.nextLine();
@@ -19,7 +23,30 @@ public class InputHelper {
         }
     }
 
-    public static int getValidInt(String prompt, IntPredicate validator, String errorMessage) {
+    public String getValidStatus(String prompt, Predicate<String> validator, String errorMessage) {
+        while (true) {
+            System.out.print(prompt);
+            String input = sc.nextLine();
+            if (validator.test(input.toLowerCase())) {
+                return input;
+            }
+            System.out.println(errorMessage);
+        }
+    }
+
+    public int getValidPrio(String prompt, IntPredicate validator, String errorMessage) {
+        while (true) {
+            System.out.print(prompt);
+            int input = sc.nextInt();
+            if (validator.test(input)) {
+                return input;
+            }
+            System.out.println(errorMessage);
+        }
+    }
+
+
+    public int getValidInt(String prompt, IntPredicate validator, String errorMessage) {
         while (true) {
             System.out.print(prompt);
             try {
@@ -30,36 +57,6 @@ public class InputHelper {
             } catch (NumberFormatException _) {
             }
             System.out.println(errorMessage);
-        }
-    }
-
-    public static double getValidDouble(String prompt, DoublePredicate validator, String errorMessage) {
-        while (true) {
-            System.out.print(prompt);
-            try {
-                double input = Double.parseDouble(sc.nextLine());
-                if (validator.test(input)) {
-                    return input;
-                }
-            } catch (NumberFormatException _) {
-            }
-            System.out.println(errorMessage);
-        }
-    }
-
-    public static char getValidChar(String prompt, char[] validOptions) {
-        while (true) {
-            System.out.print(prompt);
-            String input = sc.nextLine().toLowerCase();
-            if (input.length() > 0) {
-                char c = input.charAt(0);
-                for (char option : validOptions) {
-                    if (c == option) {
-                        return c;
-                    }
-                }
-            }
-            System.out.println("Invalid input. Please try again.");
         }
     }
 }

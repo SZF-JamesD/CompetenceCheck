@@ -1,13 +1,16 @@
-import com.fasterxml.jackson.databind.ObjectMapper;
+import controllers.MenuController;
 import utils.DBConnection;
 import utils.DBHelpers;
 import utils.DBInitializer;
-import utils.JsonDataLoader;
-
+import utils.ValidationUtil;
+import utils.InputHelper;
+import views.MenuView;
+import services.*;
 import java.io.IOException;
-import java.sql.SQLException;
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class App {
     public void start() {
@@ -16,31 +19,30 @@ public class App {
             DBHelpers dbHelpers = new DBHelpers(dbConnection);
 
             Map<String, String> tableDefinitions = new HashMap<>();
-            tableDefinitions.put("tablename1", "id int auto_increment primary key, etc");
-            tableDefinitions.put("tablename2", "id int auto_increment primary key, etc");
+            tableDefinitions.put("work_orders",
+                    "id int auto_increment primary key, " +
+                    "title text not null, " +
+                    "description text not null, " +
+                    "status varchar(11) not null default 'OPEN', " +
+                    "date_created date, " +
+                    "priority int");
 
-            DBInitializer initializer = new DBInitializer(dbConnection, "myDbName");
+            DBInitializer initializer = new DBInitializer(dbConnection, "work_orders_db");
             initializer.initialize(tableDefinitions);
 
-            // instantiate services here
-            // ie UserService userService = new UserService();
-            //CompetenceCheckService checkService = new CompetenceCheckService();
-            //ObjectMapper objectMapper = new ObjectMapper();
-            //JsonDataLoader jsonDataLoader = new JsonDataLoader(objectMapper);
-            //Map<String, List<Map<String, Object>>> data = jsonDataLoader.loadData("data.json")
-            //Inject into controllers here
-            //UserController userController = new UserController(userService)
-            //CompCheckController checkController = new CompCheckController(checkService)
+            Scanner sc = new Scanner(System.in);
+            ValidationUtil validationUtil = new ValidationUtil();
+            InputHelper inputHelper = new InputHelper(sc);
 
-            //set up view if needed
-            //ConsoleView view = new ConsoleView(userController, checkController);
+            MenuService menuService = new MenuService(dbHelpers);
+            InputHandler inputHandler = new InputHandler(validationUtil, inputHelper);
 
-            //start ui if needed
-            //view.showWelcomeScreen();
+            MenuController menuController = new MenuController(menuService, inputHandler, sc);
 
-            //otherwise in console do usual while(runnin) etc, menu in views, MenuView or soemthing
-            //then like MainView view = MainView(Usercontroller)
-            //view.start() , then start stuff inthe menu view
+
+            MenuView menuView = new MenuView(sc, menuController);
+
+            menuView.runMenu();
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }

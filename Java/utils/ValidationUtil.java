@@ -1,22 +1,27 @@
 package utils;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public class ValidationUtil {
 
-    public static boolean isNonEmptyString(String input) {
+    public boolean isNonEmptyString(String input) {
         return input != null && !input.trim().isEmpty();
     }
 
 
-    public static boolean isAlphanumeric(String input) {
+    public boolean isAlphanumeric(String input) {
         if (input == null) return false;
         return Pattern.matches("^[a-zA-Z0-9 ]+$", input);
     }
 
+    public <T> boolean isInList(List<T> list , T item) {
+        return list.contains(item);
+    }
 
-    public static boolean isPositiveInt(int number) {
+    public boolean isPositiveInt(int number) {
         return number > 0;
     }
 

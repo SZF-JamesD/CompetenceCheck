@@ -12,8 +12,9 @@ public final class DBConnection {
 
     public DBConnection(String configPath) throws IOException {
         this.properties = new Properties();
-        FileInputStream configFile = new FileInputStream(configPath);
-        properties.load(configFile);
+        try(FileInputStream configFile = new FileInputStream(configPath)) {
+            properties.load(configFile);
+        }
     }
 
     public Connection getConnection() throws SQLException {

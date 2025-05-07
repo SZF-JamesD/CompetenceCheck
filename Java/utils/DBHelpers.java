@@ -59,7 +59,7 @@ public class DBHelpers {
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                return resultSetMapper.apply(rs);
+                return  resultSetMapper.apply(rs);
             } else {
                 return null;
             }
@@ -75,40 +75,6 @@ public class DBHelpers {
         Connection con = dbConnection.getConnection(db_name);
         if (con != null && !con.isClosed()) {
             con.close();
-        }
-    }
-
-    public void insertJsonData(String dbName, Map<String, List<Map<String, Object>>> data) {
-        try {
-            for (Map.Entry<String, List<Map<String, Object>>> entry: data.entrySet()) {
-                String table = entry.getKey();
-                List<Map<String, Object>> rows = entry.getValue();
-
-                for (Map<String, Object> row : rows) {
-                    StringBuilder sql = new StringBuilder("insert into " + table + " (");
-                    StringBuilder placeholders = new StringBuilder(" values (");
-                    List<Object> values = new ArrayList<>();
-
-                    for (String column : row.keySet()) {
-                        sql.append(column).append(",");
-                        placeholders.append("?,");
-                        values.add(row.get(column));
-                    }
-
-                    sql.setLength(sql.length() -1);
-                    placeholders.setLength(placeholders.length() -1);
-
-                    sql.append(")").append(placeholders).append(")");
-
-                    executeUpdate(dbName, sql.toString(), stmt -> {
-                        for (int i = 0; i < values.size(); i++) {
-                            stmt.setObject(i + 1, values.get(i));
-                        }
-                    });
-                }
-            }
-        } catch (SQLException e) {
-            System.out.println("Error: " + e);
         }
     }
 }
