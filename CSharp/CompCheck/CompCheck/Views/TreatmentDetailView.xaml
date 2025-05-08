@@ -1,0 +1,32 @@
+﻿<Window x:Class="CompCheck.Views.TreatmentDetailView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CompCheck.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="500"
+      Title="Treatment Details" Height="450" Width="500" ResizeMode="NoResize">
+
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Treatment Details" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+
+            <TextBlock Text="ID:"/>
+            <TextBlock Text="{Binding Pet.PetId}"/>
+
+            <TextBlock Text="Treatments:" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding TreatmentModel.Treatment}"/>
+
+            <TextBlock Text="Diagnosis:" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding TreatmentModel.Diagnosis}"/>
+
+            <TextBlock Text="Vet Name:" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding TreatmentModel.VetName}"/>
+
+            <TextBlock Text="Date:" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding TreatmentModel.TreatmentDate}"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

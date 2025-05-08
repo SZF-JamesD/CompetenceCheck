@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="CompCheck.Views.MainView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CompCheck.Views"
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      mc:Ignorable="d" >
+
+    <Grid Background="White">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="0.35*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" Content="Vet Clinic Data Management" FontSize="24" UseLayoutRounding="False"/>
+
+        <Label Grid.Row="1" Grid.Column="1" Content="Pets" FontSize="10" UseLayoutRounding="False"/>
+        
+        <ScrollViewer Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Visible" Margin="2, 0, 2 ,5" >
+            <ListView x:Name="PetListView" ItemsSource="{Binding Pets}"  SelectedItem="{Binding SelectedPet, Mode=TwoWay}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseDoubleClick">
+                        <i:InvokeCommandAction Command="{Binding ToTreatmentDetailsCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="Auto"/>
+
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Name:"/>
+                            <TextBlock Grid.Column="1" Text="{Binding PetName}"/>
+                            <TextBlock Grid.Column="2" Text="Species: "/>
+                            <TextBlock Grid.Column="3" Text="{Binding PetType}"/>
+                            <TextBlock Grid.Column="4" Text="Owner: "/>
+                            <TextBlock Grid.Column="5" Text="{Binding OwnerName}"/>
+                            
+                            
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="0.45*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Average Cost Per Vet" FontSize="10" UseLayoutRounding="False"/>
+            
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible" Margin="2, 0, 2 ,5">
+                <ListView x:Name="VetListView" ItemsSource="{Binding Vets}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <WrapPanel>
+                                    <TextBlock Text="{Binding VetName, StringFormat='{}{0}\, '}"/>
+                                    <TextBlock Text="{Binding AverageCost}"/>
+                                </WrapPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollViewer>
+
+            <Button Content="Refresh Page" FontSize="10"  Command="{Binding RefreshCommand}" HorizontalAlignment="Center"  Grid.Row="2" Width="120" Height="25" Padding="1,1,1,1" Margin="2,5,2,5"/>
+        </Grid>
+
+
+
+    </Grid>
+</UserControl>
