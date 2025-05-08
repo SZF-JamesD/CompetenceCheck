@@ -3,7 +3,6 @@ using CompCheck.Views;
 using Microsoft.Extensions.DependencyInjection;
 using MvvmUtilities;
 using MvvmUtilities.Interfaces;
-using System.Security.Cryptography.X509Certificates;
 
 namespace CompCheck.ViewModels
 {

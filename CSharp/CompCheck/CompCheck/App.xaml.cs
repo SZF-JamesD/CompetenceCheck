@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-using MySql.Data.MySqlClient;
-using Microsoft.Extensions.DependencyInjection;
-using System.Data.Common;
-using DBLib;
-using MvvmUtilities.Interfaces;
-using MvvmUtilities;
-using System.Collections.ObjectModel;
-using CompCheck.Interfaces;
+﻿using CompCheck.Interfaces;
+using CompCheck.Models;
 using CompCheck.Services;
 using CompCheck.ViewModels;
-using CompCheck.Models;
 using CompCheck.Views;
+using DBLib;
+using Microsoft.Extensions.DependencyInjection;
+using MvvmUtilities;
+using MvvmUtilities.Interfaces;
+using System;
+using System.Collections.ObjectModel;
+using System.Data.Common;
+using System.Windows;
 
 namespace CompCheck
 {
