@@ -9,24 +9,31 @@
       Title="Treatment Details" Height="450" Width="500" ResizeMode="NoResize">
 
     <Grid Margin="10">
-        <StackPanel>
-            <TextBlock Text="Treatment Details" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+        <ScrollViewer>
+            <ListView ItemsSource="{Binding Treatments}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                        <TextBlock Text="Treatment Details" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
 
-            <TextBlock Text="ID:"/>
-            <TextBlock Text="{Binding Pet.PetId}"/>
+                        <TextBlock Text="ID:"/>
+                        <TextBlock Text="{Binding PetId}"/>
 
-            <TextBlock Text="Treatments:" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding TreatmentModel.Treatment}"/>
+                        <TextBlock Text="Treatments:" Margin="0,10,0,0"/>
+                        <TextBlock Text="{Binding Treatment}"/>
 
-            <TextBlock Text="Diagnosis:" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding TreatmentModel.Diagnosis}"/>
+                        <TextBlock Text="Diagnosis:" Margin="0,10,0,0"/>
+                        <TextBlock Text="{Binding Diagnosis}"/>
 
-            <TextBlock Text="Vet Name:" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding TreatmentModel.VetName}"/>
+                        <TextBlock Text="Vet Name:" Margin="0,10,0,0"/>
+                        <TextBlock Text="{Binding VetName}"/>
 
-            <TextBlock Text="Date:" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding TreatmentModel.TreatmentDate}"/>
-        </StackPanel>
-
+                        <TextBlock Text="Date:" Margin="0,10,0,0"/>
+                        <TextBlock Text="{Binding TreatmentDate}"/>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
     </Grid>
 </Window>

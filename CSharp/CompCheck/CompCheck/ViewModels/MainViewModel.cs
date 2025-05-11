@@ -87,9 +87,10 @@ namespace CompCheck.ViewModels
                 var detailView = App.ServiceProvider.GetRequiredService<TreatmentDetailView>();
                 if (detailView.DataContext is TreatmentDetailViewModel vm)
                 {
+                    detailView.Show();
                     await vm.LoadTreatmentsForPet(SelectedPet.PetId);
                     
-                    detailView.Show();
+                    
                 }
                 else
                 {

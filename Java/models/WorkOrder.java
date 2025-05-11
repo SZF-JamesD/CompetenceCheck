@@ -5,8 +5,6 @@ import java.util.Date;
 import java.util.Set;
 
 public class WorkOrder {
-    public enum Status {
-        OPEN, IN_PROGRESS, CLOSED}
 
     private int id;
     private String title;

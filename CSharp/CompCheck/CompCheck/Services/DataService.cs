@@ -22,8 +22,8 @@ namespace CompCheck.Services
         {
             var sql = "select * from get_pets";
             var parameters = new Dictionary<string, object>();
-            await Task.Delay(3000);
-            _dialogService.ShowMessage("Loading, please wait", "Loading");
+            //await Task.Delay(3000);
+            //_dialogService.ShowMessage("Loading, please wait", "Loading");
             var pets = await _dbService.GetAsync<Pet>(sql, parameters, reader =>
             {
                 var petDict = new Dictionary<string, object>();
@@ -59,14 +59,15 @@ namespace CompCheck.Services
 
         public async Task<IEnumerable<TreatmentModel>> GetAllPetTreatmentsAsync(int petId)
         {
-            var sql = "select * from pet_treatments where pet_id = @petId;";
+            //var sql = "select vtp.pet_id, t.diagnosis, t.treatment, v.vet_name, t.treatment_date from Vets_Treatments_and_Pets vtp join Treatments t on vtp.treatment_id = t.treatment_id join vets v on vtp.vet_id = v.vet_id  where vtp.pet_Id= @petId;";
+            var sql = "select * from pet_treatments where pet_id = @petId";
             var parameters = new Dictionary<string, object>
             {
                 {"petId", petId }
             };
 
-            await Task.Delay(3000);
-            _dialogService.ShowMessage("Loading, please wait", "Loading");
+            //await Task.Delay(3000);
+           // _dialogService.ShowMessage("Loading, please wait", "Loading");
 
             var treatments = await _dbService.GetAsync<TreatmentModel>(sql, parameters, reader =>
             {

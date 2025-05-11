@@ -1,0 +1,285 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|c:\\users\\052277\\competencecheck\\csharp\\compcheck\\compcheck\\views\\treatmentdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\views\\treatmentdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\viewmodels\\treatmentdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\viewmodels\\treatmentdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\views\\treatmentdetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\views\\treatmentdetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\views\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\views\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\models\\vet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\models\\vet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\models\\treatmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\models\\treatmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\compcheck\\interfaces\\idataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE9147EA-2CBC-44DB-88EF-603679A8BCC4}|CompCheck\\CompCheck.csproj|solutionrelative:compcheck\\interfaces\\idataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE877BE-8582-46CC-B71C-8E7A68BE7410}|..\\..\\..\\source\\repos\\CSharpProjects\\LE_07\\DBLib\\DBLib.csproj|c:\\users\\052277\\source\\repos\\csharpprojects\\le_07\\dblib\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "CompCheck\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "CompCheck\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAYwFkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:41.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "CompCheck\\Services\\DataService.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Services\\DataService.cs",
+              "RelativeToolTip": "CompCheck\\Services\\DataService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwFYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:34:19.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TreatmentDetailView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Views\\TreatmentDetailView.xaml.cs",
+              "RelativeDocumentMoniker": "CompCheck\\Views\\TreatmentDetailView.xaml.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Views\\TreatmentDetailView.xaml.cs",
+              "RelativeToolTip": "CompCheck\\Views\\TreatmentDetailView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:47.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TreatmentDetailView.xaml",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Views\\TreatmentDetailView.xaml",
+              "RelativeDocumentMoniker": "CompCheck\\Views\\TreatmentDetailView.xaml",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Views\\TreatmentDetailView.xaml",
+              "RelativeToolTip": "CompCheck\\Views\\TreatmentDetailView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-08T12:43:49.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TreatmentDetailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\ViewModels\\TreatmentDetailViewModel.cs",
+              "RelativeDocumentMoniker": "CompCheck\\ViewModels\\TreatmentDetailViewModel.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\ViewModels\\TreatmentDetailViewModel.cs",
+              "RelativeToolTip": "CompCheck\\ViewModels\\TreatmentDetailViewModel.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:43.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Views\\MainView.xaml",
+              "RelativeDocumentMoniker": "CompCheck\\Views\\MainView.xaml",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Views\\MainView.xaml",
+              "RelativeToolTip": "CompCheck\\Views\\MainView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-08T11:59:45.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "CompCheck\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "CompCheck\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:42.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\App.xaml.cs",
+              "RelativeDocumentMoniker": "CompCheck\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\App.xaml.cs",
+              "RelativeToolTip": "CompCheck\\App.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:53.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CompCheck\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\MainWindow.xaml",
+              "RelativeToolTip": "CompCheck\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-08T12:22:35.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Views\\MainView.xaml.cs",
+              "RelativeDocumentMoniker": "CompCheck\\Views\\MainView.xaml.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Views\\MainView.xaml.cs",
+              "RelativeToolTip": "CompCheck\\Views\\MainView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:46.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CompCheck\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CompCheck\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:57.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Vet.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Models\\Vet.cs",
+              "RelativeDocumentMoniker": "CompCheck\\Models\\Vet.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Models\\Vet.cs",
+              "RelativeToolTip": "CompCheck\\Models\\Vet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:37.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TreatmentModel.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Models\\TreatmentModel.cs",
+              "RelativeDocumentMoniker": "CompCheck\\Models\\TreatmentModel.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Models\\TreatmentModel.cs",
+              "RelativeToolTip": "CompCheck\\Models\\TreatmentModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:36.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Pet.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Models\\Pet.cs",
+              "RelativeDocumentMoniker": "CompCheck\\Models\\Pet.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Models\\Pet.cs",
+              "RelativeToolTip": "CompCheck\\Models\\Pet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:59:32.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IDataService.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Interfaces\\IDataService.cs",
+              "RelativeDocumentMoniker": "CompCheck\\Interfaces\\IDataService.cs",
+              "ToolTip": "C:\\Users\\052277\\CompetenceCheck\\CSharp\\CompCheck\\CompCheck\\Interfaces\\IDataService.cs",
+              "RelativeToolTip": "CompCheck\\Interfaces\\IDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:54:14.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "C:\\Users\\052277\\source\\repos\\CSharpProjects\\LE_07\\DBLib\\DBConnection.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\CSharpProjects\\LE_07\\DBLib\\DBConnection.cs",
+              "ToolTip": "C:\\Users\\052277\\source\\repos\\CSharpProjects\\LE_07\\DBLib\\DBConnection.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\CSharpProjects\\LE_07\\DBLib\\DBConnection.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA0wCcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T05:13:01.317Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

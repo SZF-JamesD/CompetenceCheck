@@ -2,8 +2,13 @@ use vet_clinic;
 
 -- query 1 select all pets with name, type, and owner name
 select 
+	p.pet_id,
 	p.pet_name,
     p.pet_type,
+    p.breed,
+    p.date_of_birth,
+    p.gender,
+    p.chip_no,
     concat(o.first_name, ' ', o.last_name) as owner_name
     from Owners_and_Pets op
     join
@@ -14,9 +19,12 @@ select
     owner_name;
 
 -- query 2 select appointments from a pet, with vet name + diagnosis
-select
-	v.vet_name,
-    t.diagnosis
+select	
+	pet_id,
+    t.diagnosis,
+    t.treatment,
+    v.vet_name,
+    t.treatment_date
     from
     Vets_Treatments_and_Pets vtp
     join 

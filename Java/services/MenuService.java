@@ -97,9 +97,9 @@ public class MenuService {
         List<WorkOrder> orders = new ArrayList<>();
         try {
             String sql = "select * from work_orders where status=?";
-            dbHelpers.executeQuery("work_orders_db", sql, stmt -> {
-                stmt.setString(1, status);
-            }, rs -> {
+            dbHelpers.executeQuery("work_orders_db", sql, stmt ->
+                stmt.setString(1, status)
+            , rs -> {
                 WorkOrder workOrder = new WorkOrder(
                         rs.getInt("id"),
                         rs.getString("title"),
