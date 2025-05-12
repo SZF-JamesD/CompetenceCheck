@@ -10,7 +10,7 @@ def main():
     root.title("Easy Chords")
     root.geometry("800x600")
     root.config(bg="#ECEBDE")
-    root.resizable=False
+    root.resizable=(False, False)
 
     config = load_config()   
     messagebox_handler = MessageBoxHandler()
