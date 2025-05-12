@@ -20,7 +20,7 @@ select
 
 -- query 2 select appointments from a pet, with vet name + diagnosis
 select	
-	pet_id,
+	vtp.pet_id,
     t.diagnosis,
     t.treatment,
     v.vet_name,
@@ -32,7 +32,7 @@ select
     join
     Vets v on vtp.vet_id = v.vet_id
     where
-    vtp.pet_id = 1;
+    vtp.pet_id = 6;
     
 -- query 3 select the average cost per vet
 select

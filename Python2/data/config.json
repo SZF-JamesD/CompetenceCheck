@@ -1,6 +1,8 @@
 {
-  "host": "localhost",
-  "user": "root",
-  "password": "",
-  "database": "vet_clinic"
+  "db": {
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "song_chords_db"
+  }
 }

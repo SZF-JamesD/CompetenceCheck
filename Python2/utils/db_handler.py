@@ -15,7 +15,7 @@ class DatabaseHandler:
             self.cursor = self.connection.cursor(dictionary=True)
             print("Connected to the database")
         except Error as e:
-            self.messagebox.show_error("Database Connection Error: ", str(e))
+            self.messagebox.show_error(f"Database Connection Error:  {str(e)}")
             raise
         
 
@@ -64,6 +64,6 @@ if __name__ == "__main__":
         )
 
         print("Connection test successful!")
-        print(db.fetch_all( "select * from pets"))
+        print(db.fetch_all( "select * from songs"))
     except Exception as e:
         print(f"Connection test failed: {e}")
