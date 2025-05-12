@@ -60,7 +60,7 @@ class MainView(tk.Frame):
 
         button_frame = tk.Frame(root)
         button_frame.config(bg="#ECEBDE")
-        button_frame.pack(fill="x", padx=100)
+        button_frame.pack(fill="x", padx=25)
 
 
         tk.Button(button_frame, height=3, width=10, font=("Arial", 10),text="Maj", bg="#D7D3BF", command=lambda: self.chord_displayer("maj", self.selected)).pack(anchor="center", side="left", padx=5)
@@ -68,6 +68,8 @@ class MainView(tk.Frame):
         tk.Button(button_frame, height=3, width=10, font=("Arial", 10),text="Sus2", bg="#D7D3BF", command=lambda:self.chord_displayer("s2", self.selected)).pack(anchor="center", side="left", padx=5)
         tk.Button(button_frame, height=3, width=10, font=("Arial", 10), text="Sus4", bg="#D7D3BF", command=lambda:self.chord_displayer("s4", self.selected)).pack(anchor="center", side="left", padx=5 )
         tk.Button(button_frame, height=3, width=10, font=("Arial", 10), text="Dom7", bg="#D7D3BF", command=lambda:self.chord_displayer("D7", self.selected)).pack(anchor="center", side="left", padx=5 )
+        tk.Button(button_frame, height=3, width=10, font=("Arial", 10), text="Maj7", bg="#D7D3BF", command=lambda:self.chord_displayer("M7", self.selected)).pack(anchor="center", side="left", padx=5 )
+        tk.Button(button_frame, height=3, width=10, font=("Arial", 10), text="Min7", bg="#D7D3BF", command=lambda:self.chord_displayer("m7", self.selected)).pack(anchor="center", side="left", padx=5 )
 
 
     def on_song_selected(self, event):
